@@ -1,0 +1,158 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	 font-family: arial;
+	 display: flex;
+	 flex-direction: column;
+margin: 0;
+
+}
+a{
+	text-decoration: none;
+	list-style: none;
+}
+header{
+	background-color:#566c2b;
+	display: flex;
+	  margin: 0;
+	  padding: 0;
+	  text-align: center;
+}
+header ul {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+header a{
+	color: #fff;
+}
+#logo{
+	margin:0 auto;
+	padding-top: 10px;
+	font-size: 25px;
+}
+
+#menu li{
+	padding: 10px;
+}
+aside{
+	flex: 0 0 20vw;
+	background-color: beige;
+}
+
+
+#loading{
+	
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url('http://garudapr.in/wp-content/uploads/2017/12/loader.gif');
+}
+
+aside ul{
+	list-style: none;
+	padding: 0;
+}
+aside ul a{
+	background-color: #566c2b;
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid grey;
+}
+aside  img{
+	width: 100%;
+}
+#main{
+	display: flex;
+}
+
+.social-link li {
+	padding:10px;
+	 text-align: center;
+}
+
+.service-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.service-box{
+	border: 1px solid #eee;
+	flex-basis: 32%;
+	max-width: 390px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.service-box img{
+	width: 100%;
+}
+
+footer{
+	background-color: #566c2b;
+	color: #fff;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.call-to-action{
+align-self:flex-start ;	
+margin-top: auto;
+}
+.call-to-action a{
+	background: grey;
+	border: 2px solid transparent;
+	color: #fff;
+	padding: 8px 13px;
+	display: block;
+}
+
+.call-to-action a:hover{
+	background: transparent;
+	border: 2px solid grey;
+	color:grey;
+	
+}
+
+@media screen and (max-width: 850px){
+
+.service-box{
+	
+	flex-basis: 48%;
+	
+	
+}
+	
+	aside{
+	flex: 0 0 30vw;
+	background-color: beige;
+}
+}
+
+@media screen and (max-width: 600px){
+	header{
+		flex-direction: column;
+	}
+	#logo{
+	order: -1;
+}
+article{
+	order: -1;
+
+}
+#main{
+	flex-direction: column;
+}
+
+.service-container{
+	flex-direction: column;
+	align-items: center;
+}
+h2{
+	align-items: center;
+}
+}
+
+
